@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { decrement, increment } from "./redux/features/counter/counterSlice";
 
 import { useAppSelector } from "./redux/hook";
+import { Button } from "./components/ui/button";
 
 
 function App() {
@@ -21,10 +22,10 @@ function App() {
    <div>
     <div>
       <h1>calculate</h1>
-      <button onClick={ ()=>handleIncrement(7)}>increment by 7</button>
-      <button onClick={()=>handleIncrement(1)}>increment</button>
+      <Button onClick={ ()=>handleIncrement(7)}>increment by 7</Button>
+      <Button onClick={()=>handleIncrement(1)}>increment</Button>
       <div>{count}</div>
-      <button onClick={handledecrement}>decrement</button>
+      <Button onClick={handledecrement}>decrement</Button>
     </div>
    </div>
   )
