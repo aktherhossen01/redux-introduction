@@ -3,6 +3,7 @@ import { decrement, increment } from "./redux/features/counter/counterSlice";
 
 import { useAppSelector } from "./redux/hook";
 import { Button } from "./components/ui/button";
+import Tsak from "./pages/tsak";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <div>{count}</div>
       <Button onClick={handledecrement}>decrement</Button>
     </div>
+    <Tsak/>
    </div>
   )
 }
